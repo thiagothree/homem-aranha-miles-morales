@@ -13,7 +13,7 @@
 body {
   width: 100%;
   height: 100%;
-  background-image: url(../images/spider-man-miles-morales-4k-2020-ix-1920x1080\ 1.png);
+  background-image: url('../images/spider-man-miles-morales-4k-2020-ix-1920x1080\ 1.png');
   position: relative;
   font-family: 'Sora';
   display: flex;

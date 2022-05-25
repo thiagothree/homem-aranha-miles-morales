@@ -14,13 +14,12 @@
 body {
   display: flex;
   height: 100vh;
-  background-image: url('/assets/images/spider.png');
+  background-image: url('../images/spider.png');
   background-position: center;
   background-repeat: no-repeat;
 }
 
 aside {
-  border: 1px solid black;
   /*width: 60px;*/
   width: 6%;
   height: 100vh;
@@ -72,7 +71,6 @@ main {
 }
 
 header {
-  border: 1px solid black;
   width: 100%;
   /*border: 1px solid red;*/
   display: flex;
@@ -83,6 +81,7 @@ header {
 nav a {
     text-decoration: none;
     color: var(--branco);
+    
 }
 
 nav {
@@ -92,6 +91,7 @@ nav {
   width: 350px;
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .info {
@@ -115,4 +115,66 @@ button {
   height: 60px;
   margin-top: 40px;
   clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0 100%, 0 20%);
+}
+
+@media (min-width: 320px) and (max-width: 767.99px) {
+  
+  body {
+    background-position: calc(70%);
+    flex-direction: column;
+  }
+
+  aside {
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .div-aside {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
+  .social_medias {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+  }
+  
+  .social_medias img {
+    width: 100%;
+  }
+  
+  
+  .search {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search img {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    width: 100;
+  }
+
+  .container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info img {
+    width: 85%;
+  }
+
+
 }

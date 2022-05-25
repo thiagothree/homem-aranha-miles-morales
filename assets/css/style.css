@@ -14,7 +14,7 @@
 body {
   display: flex;
   height: 100vh;
-  background-image: url('./assets/images/spider-man-miles-morales-4k-2020-ix-1920x1080\ 1.png');
+  background-image: url('/assets/images/spider.png');
   background-position: center;
   background-repeat: no-repeat;
 }

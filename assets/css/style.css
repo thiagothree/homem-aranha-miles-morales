@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*border: 1px solid black;*/
 }
 
 :root {
@@ -11,37 +12,79 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/spider-man-miles-morales-4k-2020-ix-1920x1080\ 1.png');
-  position: relative;
-  font-family: 'Sora';
   display: flex;
+  height: 100vh;
+  background-image: url('/assets/images/spider-man-miles-morales-4k-2020-ix-1920x1080\ 1.png');
+  background-position: center;
+}
+
+aside {
+  border: 1px solid black;
+  /*width: 60px;*/
+  width: 6%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.perfil_picture {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.div-aside {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.division_aside {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.social_medias {
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social_medias img {
+  width: 100%;
+}
+
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
+main {
+  width: 94%;
+  height: 100vh;
 }
 
 header {
-  width: 94.79%;
-  height: 100px;
-  left: 5.23%;
-  display: flex;
-  position: absolute;
   border: 1px solid black;
+  width: 100%;
+  /*border: 1px solid red;*/
+  display: flex;
   justify-content: space-around;
-  background-color: rgba(29, 29, 29, 0.5);
-  align-items: center;
+  flex-wrap: wrap;
 }
 
-.marvel_logo {
-  width: 100px;
-  height: 41.45px;
+nav a {
+    text-decoration: none;
+    color: var(--branco);
 }
 
-.spider_logo {
-  width: 40px;
-  height: 65.19px;
-}
-
-header div {
+nav {
   font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -50,100 +93,14 @@ header div {
   justify-content: space-between;
 }
 
-header div a {
-  text-decoration: none;
-  color: var(--branco);
-}
-
-aside {
-  width: 5.21%;
-  height: 974px;
-  text-align: center;
-  background-color: rgba(29, 29, 29, 0.5);
-}
-
-.perfil_picture {
-  height: 100px;
-  position: relative;
-  width: 100%;
-  height: 6.25rem;
-}
-
-.picture {
-  position: absolute;
-  left: 25%;
-  top: 25%;
-}
-
-
-.status {
-  position: absolute;
-  left: 63%;
-  top: 62%;
-  width: 10px;
-  height: 10px;
-  border: none;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  background-image: url('../images/icons/status-online.png');
-}
-
-.status_offline {
-  background-image: url('../images/icons/status_offline.png');
-}
-
-.social_medias {
+.info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /*border: 1px solid black;*/
-  height: 250px;
-  margin-top: 5.1875rem;
-}
-
-.social_medias img {
-  width: 32px;
-  height: 32px;
-  justify-content: space-around;
-}
-
-.division_aside {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /*border: 1px solid green;*/
-  height: 83%;
-}
-
-.search {
-  width: 2rem;
-  height: 2rem;
-}
-
-main {
-  position: absolute;
-  width: 94.79%;
-  height: 800px;
-  left: 5.22%;
-  margin-top: 100px;
- /* border: 1px solid green;*/
-  text-align: center;
-  display: flex;
+  height: 80vh;
   justify-content: center;
   align-items: center;
 }
 
-main section {
- /* border: 1px solid green;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-section button {
+button {
   display: flex;
   font-weight: 600;
   font-size: 1.25rem;
@@ -157,10 +114,4 @@ section button {
   height: 60px;
   margin-top: 40px;
   clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0 100%, 0 20%);
-}
-
-button span {
-  margin-left: 1.8125rem;
-  width: 14px;
-  height: 18px;
 }

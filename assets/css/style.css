@@ -126,6 +126,7 @@ button {
   body {
     background-position: calc(70%);
     flex-direction: column;
+    height: calc(100vh - 50px);
   }
 
   aside {
@@ -163,7 +164,7 @@ button {
 
   main {
     width: 100%;
-    height: auto;
+    height: 87vh;
   }
 
   .info {

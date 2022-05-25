@@ -11,6 +11,5 @@ Esse projeto foi desenvolvido com base em um design uma página dedicada ao gran
 **Versão** atual: 1.0  
 _Funcionalidades_ da versão 1.0:  
 - Os links te levam as redes sociais do desenvolvedor.
-- O icone de status pode ser alterado entre online (padrão) e o offline.  
  
 **Versões** futuras irão chegam o mais rápido possível.
